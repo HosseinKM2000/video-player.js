@@ -1,0 +1,163 @@
+@font-face {
+    font-family: Vazir;
+    src: url(./Font/Vazir-Black.woff2);
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    background-color: #233779;
+    align-items: center;
+    height: 600px;
+}
+.container{
+        width: 640px;
+        height: 360px;
+        position: relative;
+        display: flex;
+}
+.contorols
+{
+    width: 640px;
+    height: 65px;
+    background-color: #122f85;
+    position: absolute;
+    margin-top: 295px;
+    opacity: 0.5;
+    display: none;
+    justify-content: unset;
+    align-items: center;
+}
+.contorols:hover
+{
+    
+    display: flex;
+    opacity: 1;
+}
+.contorols:hover .progres-bar
+{
+    opacity: 1;
+}
+.container:hover .contorols
+{
+    display: flex;
+    
+}
+.container:hover .progres-bar
+{
+    display: block;
+}
+.PNG
+{
+    width: 40px;
+    height: 40px;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    transition-duration: 0.2s;
+}
+.PNG:active
+{
+    transform: scale(0.9,0.9);
+}
+.restarticon
+{
+    
+    width: 37px;
+    margin-left: 76px;
+    height: 37px;
+}
+.progres-bar
+{
+    display:block ;
+    width: 600px;
+    height: 10px;
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    width: 640px;
+    position: absolute;
+    width: 640px;
+    height: 6px;
+    margin:-39px 0px 0px 0px;
+    opacity: 0.2;
+    background:linear-gradient(90deg,rgb(0, 204, 255) 50% ,grey 0%)
+}
+.progres-bar::-webkit-slider-thumb
+{
+    -webkit-appearance: none !important;
+    background-color: #00c3ff;
+    height: 0px;
+    width: 0px;
+    border-radius: 50%;
+}
+.progres-bar::-moz-range-track {
+    border: none;
+    background: none;
+    outline: none;
+}
+.fullscreen
+{
+   
+    width: 37px;
+    
+    height: 37px;
+}
+.icon2
+{
+    display: none;
+}
+.timer
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 45px;
+}
+.displaynone
+{
+    display: none;
+}
+
+.displayon
+{
+    display: block;
+}
+.timer{
+    color: white;
+}
+.volum-value
+{
+    display: none;
+    opacity: 0.2;
+    width: 100px;
+    height: 10px;
+    background:linear-gradient(90deg,rgb(0, 204, 255) 0% ,grey 0%);
+    position: absolute;
+    top: 239px;
+    left: 517px;
+    transform-origin: bottom;
+    transform: rotate(-90deg);
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    
+}
+.volum-value::-webkit-slider-thumb
+{
+    -webkit-appearance: none !important;
+    background-color: #00c3ff;
+    height: 0px;
+    width: 0px;
+    border-radius: 50%;
+}
+.volum-value::-moz-range-track {
+    border: none;
+    background: none;
+    outline: none;
+}
+.contorols:hover .volum-value
+{
+  opacity: 1;  
+}
+.displayblock{
+    display: block;
+}
